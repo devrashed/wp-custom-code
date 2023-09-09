@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css' />
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<script>
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Using for loop
+for (let i = 0; i < numbers.length; i++) {
+  //console.log(numbers[i]);
+}
+
+// Using forEach
+numbers.forEach((number) => {
+  //console.log(number);
+});
+
+/*=========================*/
+
+const fruits = ['apple', 'banana', 'orange', 'grapes'];
+
+///console.log(fruits.indexOf('orange')); // Output: 2
+
+const foundFruit = fruits.find((fruit) => fruit === 'banana');
+
+//console.log(foundFruit); // Output: 'banana'
+
+const filteredFruits = fruits.filter((fruit) => fruit.startsWith('a'));
+//console.log(filteredFruits); // Output: ['apple']
+
+const fruits1 = ['apple', 'banana', 'orange', 'grapes', 'kiwi'];
+
+const citrusFruits = fruits1.slice(2, 3);
+console.log(citrusFruits); // Output: ['orange', 'grapes']
+
+</script>	
+<style>
+
+.container{
+    display: flex;
+    justify-content:space-around;
+    /*align-self:self-end;*/
+}
+.container div{
+    padding: 20px;
+    flex-basis: 30%;
+}
+.container .box1{
+    background-color:red;
+
+    order: 3;
+}
+.container .box2{
+   background-color:blue;
+   
+   order: 1;
+}
+.container .box3{
+   background-color: magenta;
+   order: 2;
+}
+
+</style>	
+
+<h2>Flex</h2>
+
+<div class="container">
+
+   <div class="box1"> 
+    <h3>Box1</h3>
+    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+   </div>
+
+   <div class="box2"> 
+    <h3>Box2</h3>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+   </div>
+
+   <div class="box3"> 
+    <h3>Box3</h3>
+      <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+   </div>
+   
+</div>    
+
+       
+<!-- <h2>Grid</h2> -->
+
+
+  
+       
+  </body>
+</html>
